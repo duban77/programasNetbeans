@@ -1,0 +1,26 @@
+using namespace std;
+
+int a,b,c,d,t,f,iva;
+int main()
+{
+	cout<<" ingrese el  valor del primer producto  ";
+	cin>>a;
+	cout<<" ingrese el  valor del segundo producto producto  ";
+	cin>>b;
+	cout<<" ingrese el  valor del tercer producto  ";
+	cin>>c;
+	cout<<" ingrese el  valor del cuarto producto  ";
+	cin>>d;
+	f=(a+b+c+d);
+	t=((f*19)/100);
+	iva=(f+t);
+	cout << "valor del producto : "<< f;
+	cout << "\n";
+	cout << "el valor del iva es : "<< t;
+	cout << "\n";
+	cout << "el valor a pagar es : "<< iva;
+	cout << "\n";
+	system("pause");
+	return 0 ;
+	
+}
