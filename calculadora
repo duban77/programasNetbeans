@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main
+{
+	int a;
+	int b;
+	int c;
+		cout<<"ingrese un valor en a:";
+		cin>>a;
+		cout<<"ingrese un valor en b:";
+		cin>>b;
+		c=a+b;
+		cout<<"la suma es: "<<c;
+		c=a-b;
+		cout<<"la resta es: "<<c;
+		c=a*b;
+		cout<<"la multiplicacion es: "<<c;
+		c=a/b;
+		cout<<"la division es: "<<c;
+	c=a%b;
+	cout<<"el mod es: "<<c;
+} 
