@@ -1,0 +1,20 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main(int argc, char*argv[])
+{
+	cout<< "\n INTRODUZCA 2 NOTAS (entre 0 y 50): ";
+	cout<< "RESULTADO DE NOTAS" << endl;
+	int a, b, res; char op;
+	cout<< "Ingrese la primera nota: ";
+	cin>> a;
+	cout<< "Ingrese la segund nota: ";
+	cin>> b;
+	cout<< "Sus dos notas son: " << a << " y " << b << endl;
+	res = (a+b)/2;
+		cout<< "Promedio:  " << res;
+	getchar	();
+	return 0;
+	if (op >= 35);
+	cout<< "Promedio es mayor a 35";
+}
