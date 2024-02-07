@@ -1,0 +1,19 @@
+using namespace std;
+
+int a,b,iva;
+int main()
+{
+	cout<<" ingrese el  valor  ";
+	cin>>a;
+	b=((a*19)/100);
+	iva=(a+b);
+	cout << "valor del producto : "<< a;
+	cout << "\n";
+	cout << "el valor del iva es : "<< b;
+	cout << "\n";
+	cout << "el valor a pagar es : "<< iva;
+	cout << "\n";
+	system("pause");
+	return 0 ;
+	
+}
