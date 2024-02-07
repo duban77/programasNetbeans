@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int a;
+	int b;
+	int c;
+		cout <<"ingrese un numero en a:";
+		cin>>a;
+		cout <<"ingrese un numero en b:";
+		cin>>b;
+	c=a/b;
+	cout<<"La division es:"<<c;
+	getchar();
+	return 0;
+}
