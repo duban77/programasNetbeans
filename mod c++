@@ -1,0 +1,16 @@
+using namespace std;
+
+int a,b,mod;
+int main()
+{
+	cout<<" ingrese el primer  numero :  ";
+	cin>>a;
+	cout<<" ingrese el  segundo numero   ";
+	cin>>b;
+	mod=a%b;
+	cout << "la division es  : "<< mod;
+	cout << "\n";
+	system("pause");
+	return 0 ;
+	
+}
