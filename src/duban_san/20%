@@ -1,0 +1,14 @@
+package pipe_;
+import java.util.Scanner;
+public class Pipe_ {
+public static void main(String[] args) {
+    Scanner valor = new Scanner (System.in);
+    System.out.print("Ingrese el número deseado: ");
+    double num = valor.nextDouble();
+    double porcentaje = calcularPorcentaje(num, 20);
+    System.out.println("El 20% de "+num+ "es: "+porcentaje);
+    }
+    public static double calcularPorcentaje(double numero, double porcentaje){
+        return (numero*porcentaje)/100;
+    }
+}
