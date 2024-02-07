@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int a,b,multiplicacion;
+int main()
+{
+	cout<<" ingrese el primer numero que desea multiplicar:  ";
+	cin>>a;
+	cout<<" ingrese el segundo numero que desea multiplicar:  ";
+	cin>>b;
+	multiplicacion=a*b;
+	cout << "la multiplicacion es  : "<< multiplicacion;
+	cout << "\n";
+	system("pause");
+	return 0 ;
+	
+}
