@@ -1,0 +1,16 @@
+using namespace std;
+
+int a,b,div;
+int main()
+{
+	cout<<" ingrese el  numero que desea dividir:  ";
+	cin>>a;
+	cout<<" ingrese el  numero en el que desea dividir:  ";
+	cin>>b;
+	div=a/b;
+	cout << "la division es  : "<< div;
+	cout << "\n";
+	system("pause");
+	return 0 ;
+	
+}
