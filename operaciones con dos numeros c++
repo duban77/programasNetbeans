@@ -9,4 +9,24 @@ int main(int argc, char*argv[])
 	cout<< "Sus numero son " << a << " y " << b << endl; //confirmamos numeros
 	cout<< "Elige una operacion, para ello escribe su letra: " << endl; //explicacion usuario
 	cout<< "S = Suma; R = Resta; M = Multiplicacion; D = Division." << endl;
-	 
+	cout<< " Tu operacion: "; cin>> op;
+	if ((op == 's') || (op == 'S')) {
+		cout<< "Operacion : Suma "<< endl;
+		cout<< a << " + " << b << " = " << a+b <<endl;
+	}
+	else if ((op == 'r') || (op == 'R')) {
+		cout<< "Operacion : Resta "<< endl;
+		cout<< a << " - " << b << " = " << a-b <<endl;
+    }
+    else if ((op == 'M') || (op == 'M')) {
+		cout<< "Operacion : Multiplicacion "<< endl;
+		cout<< a << " * " << b << " = " << a*b <<endl;
+    }
+	else if ((op == 'd') || (op == 'D')) {
+		cout<< "Operacion : Division "<< endl;
+		cout<< a << " / " << b << " = " << a/b <<endl;
+	}
+	else {
+		cout<< "La letra no se corresponde con ninguna operacion." <<endl;
+	}
+}
