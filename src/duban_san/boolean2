@@ -1,0 +1,25 @@
+package pipe_;
+import javax.swing.JOptionPane;
+public class CompruebaMail {
+public static void main(String[] args) {
+    int arroba=0;
+    boolean punto=false;
+    String email=JOptionPane.showInputDialog("Introduce el email, por favor."); //aqui se usa JOptionPane para que aparezca un panel.
+    for( int i=0; i<email.length();i++){
+    //email.length() para que evalue la longitud del email.
+    if(email.charAt(i)=='@'){
+    //si email contiene un arroba entonces sera true
+    arroba++;
+    }
+    if(email.charAt(i)=='.'){
+    punto=true;
+    }
+    }
+    if(arroba==1 && punto==true){        //si arroba == true entonces es correcto, si no no.
+    System.out.println("El email es correto.");
+    }
+    else{
+            System.out.println("El email no es correcto.");
+    }        
+    }
+}
