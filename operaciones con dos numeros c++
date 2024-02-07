@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(int argc, char*argv[])
+{
+	cout<< "OPERACIONES CON DOS NUMEROS" << endl;
+	int a, b; char op; //declaramos las variables
+	cout<< "Escribe un numero: "; cin >> a; //pedimos el primer numero
+	cout<< "Escribe otro numero: "; cin >>b; //pedimos el segundo numero
+	cout<< "Sus numero son " << a << " y " << b << endl; //confirmamos numeros
+	cout<< "Elige una operacion, para ello escribe su letra: " << endl; //explicacion usuario
+	cout<< "S = Suma; R = Resta; M = Multiplicacion; D = Division." << endl;
+	 
