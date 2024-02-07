@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(int argc, char*argv[])
+{
+	int hora;
+	cout << "\Introduzca una hora (entre 0 y 24): "; cin >> hora;
+	if((hora >= 0) and (hora < 12))
+	cout << "\Buenos dias\n";
+	else if ((hora >= 12) and (hora < 18)) cout << "\Buenas tardes\n";
+	else if ((hora >= 18) and (hora <24))
+	cout << "\Buenas noches\n";
+	else
+	cout << "\Hora no valida\n"; system("pause");		
+}
