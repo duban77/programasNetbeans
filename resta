@@ -1,0 +1,16 @@
+using namespace std;
+
+int a,b,resta;
+int main()
+{
+	cout<<" ingrese el primer numero que desea resta:  ";
+	cin>>a;
+	cout<<" ingrese el segundo numero que desea resta:  ";
+	cin>>b;
+	resta =a-b;
+	cout << "la suma es  : "<< resta;
+	cout << "\n";
+	system("pause");
+	return 0 ;
+	
+}
