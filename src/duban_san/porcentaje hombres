@@ -1,0 +1,21 @@
+package pipe_;
+import java.util.Scanner;
+public class PorcentajeHombres {
+public static void main(String[] args) {
+    Scanner n = new Scanner (System.in);
+    // aqui se solicita al usuario el número total de personas
+        System.out.print("Ingrese el número total de personas: ");
+        int totalPersonas = n.nextInt();
+    // se solicita al usuario el número de hombres
+        System.out.print("Ingrese el número de hombres: ");
+        int num_Hombres = n.nextInt();
+    // se calcula porcentaje hombres
+        double porcentajeHombres = calcularPorcentajeHombres(totalPersonas, num_Hombres);
+    // Mostrar el porcentaje de hombres
+        System.out.println("El porcentaje de hombres es: " + porcentajeHombres + "%");    
+    }
+    // Método para calcular el porcentaje de hombres
+    public static double calcularPorcentajeHombres(int totalPersonas, int num_Hombres) {
+        return (double) (num_Hombres * 100) / totalPersonas;
+    }
+}
