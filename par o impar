@@ -1,0 +1,19 @@
+package duban_san;
+import javax. swing. JOptionPane;
+public class negaopos {
+    public static void main(String[] args) {
+        int numl = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa un numero:  ") ) ;
+        if (numl > 0) {
+            JOptionPane. showMessageDialog(null, "Numero es positivo  ") ;
+         
+        }
+             else if (numl < 0) {
+                 JOptionPane.showMessageDialog(null, "Numero es negarivo  ") ;
+             }   
+        else {
+                 JOptionPane.showMessageDialog(null, "Numero es cero   ") ;
+             }
+                
+    }
+    
+}
