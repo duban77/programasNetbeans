@@ -1,0 +1,18 @@
+package duban_san;
+import java.util.Scanner;
+public class edadmayoromenor {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System. in) ;
+        System. out.print ("Ingrese su edad: ");
+        int edad = teclado.nextInt ();
+        if (edad > 17) {
+            System.out.println ("Eres mayor de edad !! ") ;
+            }else{
+            System.out.println ("Eres menor de edad !! ");
+            System.out.println ("Años necesarios para ser mayor de edad: " + (18 - edad));
+            
+        }
+        
+    }
+    
+}
