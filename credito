@@ -1,0 +1,33 @@
+package com.mycompany.mavenproject1;
+import java.util.Scanner;
+public class credito {
+
+    public static void main(String[] args) {
+        float nota1, nota2,total,total1,cuota,cuota1,t,t2;
+        Scanner s= new Scanner(System.in);
+        System.out.println("pago credito");
+        s.nextLine();
+        System.out.println("cual es su nombre..");
+        String n= s.nextLine();
+        System.out.println("ingrese el valor del credito que desea solicitar");
+        nota1= s.nextInt();
+        System.out.println("el numero de cuotas en los que desea pagar");
+        nota2= s.nextInt();
+        total=(((nota1*1)/100)*nota2);
+        t=(nota1+total);
+        cuota=(total/12);
+        total1=(((nota1*2)/100)*nota2);
+        t2=(nota1+total1);
+        cuota1=(total/12);
+        if (nota2>12){
+        System.out.println("el valor total al (1%) es de "+t+" y el de la cuota mensual es de "+cuota);
+        }else
+            if (nota2>0&&nota2<=12){
+        System.out.println("el valor total al (1%) es de "+t2+" y el de la cuota mensual es de "+cuota1);
+            }else
+                     System.out.println("ingrese valores validos");
+                     
+                
+        
+    }
+}
