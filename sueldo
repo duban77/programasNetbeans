@@ -1,0 +1,32 @@
+package com.mycompany.mavenproject1;
+import java.util.Scanner;
+public class sueldo {
+
+    public static void main(String[] args) {
+        float nota1, nota2,nota3,n1,n2,n3;
+        Scanner s= new Scanner(System.in);
+        System.out.println("pago nómina");
+        s.nextLine();
+        System.out.println("ingrese su nombre");
+        String n= s.nextLine();
+        System.out.println("cuantos dias trabajó");
+        nota2= s.nextInt();
+        System.out.println("cuantos años lleva en la empresa");
+        nota1= s.nextInt();
+        n1=(nota2*30000);
+        n2=((n1*10)/100);
+        n3= (n1+n2);
+        if (nota1>=10&&nota2<=30){
+        System.out.println("tiene derecho a un 10% adicional de su salario"+ n3);
+        }else
+            if (nota2>0&&nota2<=30){
+        System.out.println("querido "+n+" su salario mensual es de "+n3 ) ;
+            }else
+                     System.out.println("intenta ingresar datos validos como que el dumero de dias trabajados"
+                             + " no excedad el de los dias del mes del mes");
+                     
+                
+        
+    }
+    
+ }
