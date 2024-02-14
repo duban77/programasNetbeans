@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main (int argc, char*argv[])
+{
+	int nota1, nota2;
+	cout<<"inserte la nota de programacion ";
+	cin>>nota1;
+	cout<<"inserte la nota de calculo ";
+	cin>>nota2;
+	if(nota1>=35)
+	{
+		if(nota2>=30)
+		cout<<"aprobo la asignatura "<< endl;
+	}
+	
+	else
+	cout <<"reprobo"<<endl;
+	system("pause");
+
+}
