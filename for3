@@ -1,0 +1,11 @@
+package Bucles;
+public class santiago {
+    public static void main (String [] args){
+        int n;
+        for(n=20;n<=30;n++){
+            System.out.println(n);
+        }
+    }
+}
+
+//duban es gay
