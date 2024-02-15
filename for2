@@ -1,0 +1,9 @@
+public class mil {
+    public static void main (String [] args){
+        int n;
+        for (n=1000;n>=900;n--){
+            System.out.println(n);
+        }
+    }
+
+}
