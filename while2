@@ -1,0 +1,15 @@
+package duban_sa;
+import java.util.Scanner;
+public class while2 {
+    public static void main (String [] args){
+        Scanner teclado=new Scanner (System.in);
+        int n;
+        n=1000;
+        while (n>=900){
+            System.out.println(n);
+            n=n-2;
+            
+        }
+    }
+    
+}
