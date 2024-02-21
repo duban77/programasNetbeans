@@ -1,0 +1,36 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+float calcularCostoTotal(float precio, string metodoPago) {
+    if (metodoPago == "EFECTIVO") {
+        return precio * 0.9; // Descuento del 10%
+    } else if (metodoPago == "DEBITO") {
+        return precio * 0.95; // Descuento del 5%
+    } else if (metodoPago == "CREDITO") {
+        return precio * 1.1; // Aumento del 10%
+    } else {
+        cout << "Método de pago no válido" << endl;
+        return -1; // Valor negativo indica un error
+    }
+}
+
+int main() {
+    float precio;
+    string metodoPago;
+
+    cout << "Ingrese el precio del celular: ";
+    cin >> precio;
+    cout << "Ingrese el método de pago (EFECTIVO/DEBITO/CREDITO): ";
+    cin >> metodoPago;
+
+    float costoTotal = calcularCostoTotal(precio, metodoPago);
+
+    if (costoTotal != -1) {
+        cout << "El costo total a pagar es: $" << fixed << setprecision(2) << costoTotal << endl;
+    }
+
+    return 0;
+}
