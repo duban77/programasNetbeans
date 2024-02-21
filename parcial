@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main (){
+	int n1,n2,op1=162000,op2,sal2;
+	cout<<"--salario mensaual--"<<endl;
+	cout<<"ingrese el salario de la  persona\n";cin>>n1;
+	cout<<"cuantos dias trabajo la persona";cin>>n2;
+	sal2=(n1*n2);
+	op2=(sal2+162000);
+	cout<<"Su salario es de: "<<sal2<<"\n";
+	if((sal2 >=2600000) and (n2<=31)){
+		cout<<" no tiene derecho al auxilio de transporte de $162000\n";  
+	}
+	else if (sal2 <=1300000) {
+		cout<<"utiene derecho a axilio,de transporte" <<op2;
+	cout<<"\n";
+	} 
+	else {
+		cout<<"recuerde que un mes tiene 30 dias o poner un salario estandar";
+	}
+}
