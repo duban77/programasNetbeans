@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    int numero;
+    int suma = 0;
+
+    do {
+        std::cout << "Introduce un número: ";
+        std::cin >> numero;
+
+        if (numero % 2 != 0 && numero != 0) {
+            suma += numero;
+        }
+    } while (numero != 0);
+
+    std::cout << "La suma de los números impares distintos de cero es: " << suma << std::endl;
+
+    return 0;
+}
