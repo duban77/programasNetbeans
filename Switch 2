@@ -1,0 +1,38 @@
+#include <iostream>
+
+int main() {
+    int numero;
+
+    // Solicitar al usuario un número del 1 al 7
+    std::cout << "Ingrese un numero del 1 al 7: ";
+    std::cin >> numero;
+
+    // Utilizar switch para determinar el día de la semana correspondiente
+    switch(numero) {
+        case 1:
+            std::cout << "Lunes\n";
+            break;
+        case 2:
+            std::cout << "Martes\n";
+            break;
+        case 3:
+            std::cout << "Miércoles\n";
+            break;
+        case 4:
+            std::cout << "Jueves\n";
+            break;
+        case 5:
+            std::cout << "Viernes\n";
+            break;
+        case 6:
+            std::cout << "Sábado\n";
+            break;
+        case 7:
+            std::cout << "Domingo\n";
+            break;
+        default:
+            std::cout << "Número ingresado no válido.\n";
+    }
+
+    return 0;
+}
