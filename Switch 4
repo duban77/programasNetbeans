@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    float valor, totalPagar, cuotaMensual;
+    int plazoMeses;
+    int opcion;
+
+    cout << "Ingrese el valor del préstamo: ";
+    cin >> valor;
+
+    cout << "Ingrese el plazo del préstamo en meses: ";
+    cin >> plazoMeses;
+
+    cout << "Opciones de préstamo:" << endl;
+    cout << "1. Menor a 1 año (1% de interés)" << endl;
+    cout << "2. Entre 2 y 3 años (2% de interés)" << endl;
+    cout << "3. Entre 4 y 5 años (5% de interés)" << endl;
+    cout << "4. De 6 a 15 años (10% de interés)" << endl;
+    cout << "Seleccione una opción: ";
+    cin >> opcion;
+
+    switch (opcion) {
+        case 1:
+            totalPagar = valor * (1 + 0.01 * plazoMeses);
+            cuotaMensual = totalPagar / plazoMeses;
+            break;
+        case 2:
+            totalPagar = valor * (1 + 0.02 * plazoMeses);
+            cuotaMensual = totalPagar / plazoMeses;
+            break;
+        case 3:
+            totalPagar = valor * (1 + 0.05 * plazoMeses);
+            cuotaMensual = totalPagar / plazoMeses;
+            break;
+        case 4:
+            totalPagar = valor * (1 + 0.10 * plazoMeses);
+            cuotaMensual = totalPagar / plazoMeses;
+            break;
+        default:
+            cout << "Opción no válida." << endl;
+            return 1;
+    }
+
+    cout << "La cuota mensual es: " << cuotaMensual << endl;
+    cout << "El total a pagar es: " << totalPagar << endl;
+
+    return 0;
+}
