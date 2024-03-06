@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main() {
+	float salario, aumento;
+	char contrato;
+	cout<<"indique su tipo de contrato"<<endl;
+	cout<<"a) de 1 a 4 meses"<<endl;
+	cout<<"b) de 5 a 8 meses "<<endl;
+	cout<<"c) de 9 a 1 año"<<endl;
+	cout<<"d) mas de 1 año"<<endl;
+	cin>>contrato;
+	cout<<"Ingrese su salario actual"<<endl;
+	cin>>salario;
+	
+	switch(contrato)
+	{
+		    case 'a': case 'A':
+			aumento = salario + (salario * 0.2);
+			cout<<"su nuevo salario sera: "<<aumento<<endl;
+			break;
+			case 'b': case 'B':
+			aumento = salario + (salario * 0.1);
+			cout<<"su nuevo salario sera: "<<aumento<<endl;
+			break;
+			case 'c': case 'C':
+			aumento = salario + (salario * 0.05);
+			cout<<"su nuevo salario sera: "<<aumento<<endl;
+			break;
+			case 'd': case 'D':
+			aumento = salario + (salario * 0.03);
+			cout<<"su nuevo salario sera: "<<aumento<<endl;
+			break;
+			default:
+				cout<<"Opcion no valida";
+				
+			
+		}		
+	}
