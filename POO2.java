@@ -14,7 +14,7 @@ public class Computador {
     int botones;
     //Atributos de la cámara
     int pixeles;
-    //Atributos de la torre2
+    
     //Métodos
     public static void main(String[] args) {
     Computador torre = new Computador();
@@ -27,46 +27,59 @@ public class Computador {
     System.out.println("EL tamaño de la torre es: "+torre.tamaño);
     
     
-    Computador montor = new Computador();
-    torre.color="blanco";
-    torre.marca="Asus";
-    torre.tamaño="grande";
-    torre.resolucion=" 2560 x 1080 píxeles";
-    torre.hz =  240;
+    Computador monitor = new Computador();
+    monitor.color="blanco";
+    monitor.marca="Asus";
+    monitor.tamaño="grande";
+    monitor.resolucion=" 2560 x 1080 píxeles";
+    monitor.hz =  240;
     
     
-    System.out.println("El color de la monitor es: "+torre.color);
-    System.out.println("La marca de la monitor es: "+torre.marca);
-    System.out.println("EL tamaño de la monitor es: "+torre.tamaño);
-    System.out.println("La resolucion de la monitor es: "+torre.resolucion);
-    System.out.println("EL hz de la monitor es: "+torre.hz);
+    System.out.println("El color de la monitor es: "+monitor.color);
+    System.out.println("La marca de la monitor es: "+monitor.marca);
+    System.out.println("EL tamaño de la monitor es: "+monitor.tamaño);
+    System.out.println("La resolucion de la monitor es: "+monitor.resolucion);
+    System.out.println("EL hz de la monitor es: "+monitor.hz);
     
     Computador teclado = new Computador();
-    torre.color="universal";
-    torre.marca="Loditech";
-    torre.tamaño="Pequeño";
-    torre.tipo =  "Mecanico";
+    teclado.color="universal";
+    teclado.marca="Loditech";
+    teclado.tamaño="Pequeño";
+    teclado.tipo =  "Mecanico";
     
     
-    System.out.println("El color de la teclado es: "+torre.color);
-    System.out.println("La marca de la teclado es: "+torre.marca);
-    System.out.println("EL tamaño de la teclado es: "+torre.tamaño);
-    System.out.println("El tipo de la teclado es: "+torre.tipo);
+    System.out.println("El color de la teclado es: "+teclado.color);
+    System.out.println("La marca de la teclado es: "+teclado.marca);
+    System.out.println("EL tamaño de la teclado es: "+teclado.tamaño);
+    System.out.println("El tipo de la teclado es: "+teclado.tipo);
     
      Computador raton = new Computador();
-    torre.color="Azul";
-    torre.marca="Loditech";
-    torre.tamaño="Pequeño";
-    torre.dpi =  800;
-    torre.botones =  6 ;
+    raton.color="Azul";
+    raton.marca="razer";
+    raton.tamaño="Pequeño";
+    raton.dpi =  800;
+    raton.botones =  6 ;
     
     
-    System.out.println("El color de la raton es: "+torre.color);
-    System.out.println("La marca de la raton es: "+torre.marca);
-    System.out.println("EL tamaño de la raton es: "+torre.tamaño);
-    System.out.println("El dpi del raton es: "+torre.dpi);
-    System.out.println("Los botones del raton es: "+torre.botones);
+    System.out.println("El color de la raton es: "+raton.color);
+    System.out.println("La marca de la raton es: "+raton.marca);
+    System.out.println("EL tamaño de la raton es: "+raton.tamaño);
+    System.out.println("El dpi del raton es: "+raton.dpi);
+    System.out.println("Los botones del raton es: "+raton.botones);
     
+    Computador camara = new Computador();
+    camara.color="Gris";
+    camara.marca="Logitech Brio, Ultra Hd Pro Webcam 4k ";
+    camara.tamaño="Mediana";
+    camara.resolucion=" 4096px x 2160px.";
+    camara.pixeles =  13 ;
+    
+    
+    System.out.println("El color de la camara es: "+camara.color);
+    System.out.println("La marca de la camara es: "+camara.marca);
+    System.out.println("EL tamaño de la camara es: "+camara.tamaño);
+    System.out.println("La resolucion de la camara es: "+camara.resolucion);
+    System.out.println("Los pixeles de la camara es: "+camara.pixeles);
     
     
     
