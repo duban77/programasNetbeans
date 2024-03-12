@@ -1,0 +1,46 @@
+package ClasesyObjetos;
+public class Zoologico {
+    //Atributos de los empleados
+    int cantidad;
+    String cargo;
+    String sexo;
+    //Atributos Habitad
+    String tamaño;
+    String ambiente;
+    int cantidadmx;
+    //Atributos de animales
+    String especie;
+    String alimentacion;
+    // Metodos
+     public static void main(String[] args) {
+          Zoologico Empleados = new Zoologico();
+        Empleados.cargo="Guia, enfermero, cuidador, aseo y puestos de comida";
+        Empleados.sexo="masculino o femenino";
+        Empleados.cantidad= 50;
+        
+        System.out.println("Los cargos de los empleados es: "+Empleados.cargo);
+        System.out.println("El sexo de los empleados es: "+Empleados.sexo);
+        System.out.println("La cantidad de  empleados es: "+Empleados.cantidad);
+        
+        Zoologico Habitad = new Zoologico();
+        Habitad.tamaño="Grande";
+        Habitad.ambiente="Mixto, terrestre, acuatico";
+        Habitad.cantidad= 10;
+        Habitad.cantidadmx= 4;
+        
+        System.out.println("El tamaño del habitad es: "+Habitad.tamaño);
+        System.out.println("El ambiente de los habitad es: "+Habitad.ambiente);
+        System.out.println("La cantidad de  habitad es: "+Habitad.cantidad);
+        System.out.println("La cantidad maxima por habitad es: "+Habitad.cantidadmx);
+        
+        Zoologico Animales = new Zoologico();
+        Animales.especie="Tigre, elefantes, nutrias, delfines y monos";
+        Animales.alimentacion="Carnivoros y herviboros";
+        Animales.cantidad= 20;
+        
+        
+        System.out.println("Las especies de alimales  es: "+Animales.especie);
+        System.out.println("El tipo de alimetacion de los animales es: "+Animales.alimentacion);
+        System.out.println("La cantidad de  animales es: "+Animales.cantidad);
+       
+     }
