@@ -1,21 +1,21 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-    float num1, num2, resultado;
-    char operacion;
+    double num1, num2;
+    char operador;
+    double resultado;
 
-    cout << "Introduce el primer número: ";
+    // Pedir al usuario que ingrese dos números y un operador
+    cout << "Ingrese el primer numero: ";
     cin >> num1;
-
-    cout << "Introduce el segundo número: ";
+    cout << "Ingrese el segundo numero: ";
     cin >> num2;
+    cout << "Ingrese el operador (+, -, *, /): ";
+    cin >> operador;
 
-    cout << "Introduce la operación a realizar (+, -, *, /): ";
-    cin >> operacion;
-
-    switch (operacion) {
+    // Realizar la operación correspondiente según el operador ingresado
+    switch(operador) {
         case '+':
             resultado = num1 + num2;
             break;
@@ -30,8 +30,16 @@ int main() {
                 resultado = num1 / num2;
             } else {
                 cout << "Error: No se puede dividir por cero." << endl;
-                return 1;
+                return 1; // Salir del programa debido a la división por cero
             }
             break;
         default:
-            cout << "Operación no válida
+            cout << "Operador invalido." << endl;
+            return 1; // Salir del programa debido a un operador inválido
+    }
+
+    // Mostrar el resultado de la operación
+    cout << "El resultado de la operacion es: " << resultado << endl;
+
+    return 0;
+}
