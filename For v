@@ -1,0 +1,27 @@
+#include <iostream>
+
+int main() {
+    // Definir una tabla para almacenar los números
+    int numeros[4];
+    int suma = 0;
+
+    // Solicitar al usuario que ingrese los números y calcular la suma
+    for(int i = 0; i < 4; i++) {
+        std::cout << "Ingrese el numero " << i + 1 << ": ";
+        std::cin >> numeros[i];
+        suma += numeros[i];
+    }
+
+    // Calcular la media aritmética
+    float media = static_cast<float>(suma) / 4;
+
+    // Mostrar la media aritmética y los números ingresados
+    std::cout << "La media aritmetica es: " << media << std::endl;
+    std::cout << "Los numeros ingresados son: ";
+    for(int i = 0; i < 4; i++) {
+        std::cout << numeros[i] << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
