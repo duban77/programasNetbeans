@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<double> numeros(5); // Definimos un vector de tamaño 5 para almacenar los números
+    
+    // Pedimos al usuario que ingrese los 5 números
+    cout << "Por favor, ingrese 5 números reales:" << endl;
+    for (int i = 0; i < 5; ++i) {
+        cout << "Número " << i + 1 << ": ";
+        cin >> numeros[i];
+    }
+    
+    // Mostramos los números en orden contrario al que se introdujeron
+    cout << "Los números en orden contrario son:" << endl;
+    for (int i = 4; i >= 0; --i) {
+        cout << numeros[i] << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
