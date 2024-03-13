@@ -1,0 +1,110 @@
+package ClasesyObjetos;
+public class Tiendaropa {
+    String tipo;
+    String tamaño;
+    String color;
+    String material;
+    String estampado;
+    String estructura;
+    String talla2;
+    String marca;
+    String fabricacion;
+    int precio, talla;
+    public static void main (String [] args) {
+        //chaqueta
+        Tiendaropa prenda1 = new Tiendaropa ();
+        
+        prenda1.tipo = "CHAQUETA";
+        prenda1.tamaño = "Ancha";
+        prenda1.color = "NEGRA O VERDE";
+        prenda1.material = "algodon";
+        prenda1.estampado = "SI";
+        prenda1.estructura = "Con capota";
+        prenda1.precio = 100000;
+        prenda1.talla2 = "S, XS, M, L, XL, XXL";
+        prenda1.marca = "Columbia o North Face";
+        prenda1. fabricacion = "Con maquina";
+        
+        System.out.println(" -- "+prenda1.tipo+" -- ");
+        System.out.println("El tamaño de la prenda es "+prenda1.tamaño);
+        System.out.println("El color de la prenda es "+prenda1.color);
+        System.out.println("El material de la prenda esta compuesto por "+prenda1.material);
+        System.out.println ("La prenda "+prenda1.estampado+" cuenta con estampado") ;
+        System.out.println("la prenda es "+prenda1.estructura);
+        System.out.println("la prenda es de marca "+prenda1.marca) ;
+        System.out.println("la prenda es tejida a "+prenda1.fabricacion) ;
+        System. out.println("La prenda tiene un precio de "+prenda1.precio) ;
+        System. out.println("Las tallas disponibles son "+prenda1.talla2);
+        //pantalon
+        Tiendaropa prenda2 = new Tiendaropa ();
+         prenda2.tipo = "PANTALON";
+         prenda2.tamaño = "Pegado y Ancho";
+        prenda2.color = "Beige o negro";
+        prenda2.material = "sintetico";
+        prenda2.estampado = "NO";
+        prenda2.estructura = "Jean";
+        prenda2.precio = 120000;
+        prenda2.talla2 = "28, 30, 32, 34";
+        prenda2.marca = "H&M o Zara Man";
+        prenda2. fabricacion = "Con maquina";
+        
+        System.out.println(" -- "+prenda2.tipo+" -- ");
+        System.out.println("El tamaño de la prenda es "+prenda2.tamaño);
+        System.out.println("El color de la prenda es "+prenda2.color);
+        System.out.println("El material de la prenda esta compuesto por "+prenda2.material);
+        System.out.println ("La prenda "+prenda2.estampado+" cuenta con estampado") ;
+        System.out.println("la prenda es "+prenda2.estructura);
+        System.out.println("la prenda es de marca "+prenda2.marca) ;
+        System.out.println("la prenda es tejida a "+prenda2.fabricacion) ;
+        System. out.println("La prenda tiene un precio de "+prenda2.precio) ;
+        System. out.println("Las tallas disponibles son "+prenda2.talla2);
+        
+        //saco
+         Tiendaropa prenda3 = new Tiendaropa ();
+        prenda3.tipo = "SACO";
+        prenda3.tamaño = "Ancho";
+        prenda3.color = "AZUL, VERDE, ROSADO, NEGRO, GRIS O AMARILLO";
+        prenda3.material = "algodon";
+        prenda3.estampado = "SI";
+        prenda3.estructura = "Abrigado";
+        prenda3.precio = 70000;
+        prenda3.talla2 = "S, XS, M, L, XL, XXL";
+        prenda3.marca = "Dafiti";
+        prenda3. fabricacion = "a mano";
+        
+        System.out.println(" -- "+prenda3.tipo+" -- ");
+        System.out.println("El tamaño de la prenda es "+prenda3.tamaño);
+        System.out.println("El color de la prenda es "+prenda3.color);
+        System.out.println("El material de la prenda esta compuesto por "+prenda3.material);
+        System.out.println ("La prenda "+prenda3.estampado+" cuenta con estampado") ;
+        System.out.println("la prenda es "+prenda3.estructura);
+        System.out.println("la prenda es de marca"+prenda3.marca) ;
+        System.out.println("la prenda es tejida a "+prenda3.fabricacion) ;
+        System. out.println("La prenda tiene un precio de "+prenda3.precio) ;
+        System. out.println("Las tallas disponibles son "+prenda3.talla2);
+        //Zapatos
+        Tiendaropa prenda4 = new Tiendaropa ();
+        prenda4.tipo = "ZAPATOS";
+        prenda4.tamaño = "Normal";
+        prenda4.color = "NEGRO, AZUL OSCURO,BLANCO O BEIGE";
+        prenda4.material = "cuero o tela";
+        prenda4.estampado = "NO";
+        prenda4.estructura = "precocidos";
+        prenda4.precio = 200000;
+        prenda4.talla2 = "38, 39, 40, 41, 42, 43";
+        prenda4.marca = "puma";
+        prenda4. fabricacion = "a maquina";
+        
+        System.out.println(" -- "+prenda4.tipo+" -- ");
+        System.out.println("El tamaño de la prenda es "+prenda4.tamaño);
+        System.out.println("El color de la prenda es "+prenda4.color);
+        System.out.println("El material de la prenda esta compuesto por "+prenda4.material);
+        System.out.println ("La prenda "+prenda4.estampado+" cuenta con estampado") ;
+        System.out.println("la prenda es "+prenda4.estructura);
+        System.out.println("la prenda es de marca "+prenda4.marca) ;
+        System.out.println("la prenda es tejida a "+prenda4.fabricacion) ;
+        System. out.println("La prenda tiene un precio de "+prenda4.precio) ;
+        System. out.println("Las tallas disponibles son "+prenda4.talla2);
+    }
+    
+}
