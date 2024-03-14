@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+// Definición de la clase Cuadrado
+class Cuadrado {
+    double lado;
+
+    // Constructor
+    public Cuadrado(double lado) {
+        this.lado = lado;
+    }
+
+    // Método para calcular el área del cuadrado
+    public double calcularArea() {
+        return lado * lado;
+    }
+
+    // Método para calcular el perímetro del cuadrado
+    public double calcularPerimetro() {
+        return 4 * lado;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario que ingrese el lado del cuadrado
+        System.out.println("Ingrese el lado del cuadrado:");
+        double lado = scanner.nextDouble();
+
+        // Crear un objeto de la clase Cuadrado
+        Cuadrado cuadrado = new Cuadrado(lado);
+
+        // Calcular y mostrar el área del cuadrado
+        System.out.println("El área del cuadrado es: " + cuadrado.calcularArea());
+
+        // Calcular y mostrar el perímetro del cuadrado
+        System.out.println("El perímetro del cuadrado es: " + cuadrado.calcularPerimetro());
+
+        scanner.close();
+    }
+}
