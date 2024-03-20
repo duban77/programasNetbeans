@@ -1,0 +1,33 @@
+package cuadrado;
+import javax.swing.*;
+public class cuadrado {
+    //atributos(lados)
+    int lad1;
+    int lad2;
+    int lad3;
+    int lad4;
+    int area;
+    int peri;
+   
+    //metodos
+    public void leernumeros(){
+        lad1 = Integer.parseInt(JOptionPane.showInputDialog("digite del lado "));
+        lad2 = Integer.parseInt(JOptionPane.showInputDialog("digite del lado"));
+        lad3 = Integer.parseInt(JOptionPane.showInputDialog("digite del lado"));
+        lad4 = Integer.parseInt(JOptionPane.showInputDialog("digite del lado"));
+        //metodos para area
+}
+    public void area(){
+        area = lad1*lad2;
+    }
+    public void perimetro(){
+        peri = lad1+lad2+lad3+lad4;
+        
+    }
+    public void resultadocuadrado(){
+      
+        System.out.println("el area del cuadrado "+area);
+        System.out.println("el perimetro del cuadrado es "+peri);
+}
+    
+}
