@@ -1,0 +1,46 @@
+package notas;
+import javax.swing.*;
+public class opnotas {
+    //atributos para opnotas
+    double nota1;
+    double nota2;
+    double nota3;
+    double promedio;
+    double definitiva;
+    
+    //metodos para la opnotas
+    public void leernotas(){
+        nota1 = Double.parseDouble(JOptionPane.showInputDialog("digite nota 1"));
+        nota2 = Double.parseDouble(JOptionPane.showInputDialog("digite nota 2"));
+        nota3 = Double.parseDouble(JOptionPane.showInputDialog("digite nota 3"));
+    }
+    public void promedio(){
+        double promedio = ((nota1+nota2+nota3)/3);
+        if (promedio>=4.5&&promedio<=5){
+            System.out.println("Felicitaciones");
+    } else
+    if (promedio>=4&&promedio<4.5){
+        System.out.println("felicidades su nota es excelente");
+    }else
+        if (promedio>=3&&promedio<4){
+            System.out.println("su nota es aceptable");
+        }else
+            if (promedio>=1&&promedio<=2.9){
+                System.out.println("perdiste la asignatura");
+            }else
+            if (promedio>=0&&promedio<1){
+                System.out.println("ya pa que viene");
+                System.out.println("su definitiva es "+promedio);
+            }else
+                System.out.println("digite notas validas veneco que le califican sobre 20");{
+        System.out.println("su definitiva es "+promedio);
+        
+    }
+        
+
+        
+    
+}
+    
+    
+}
