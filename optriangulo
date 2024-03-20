@@ -1,0 +1,30 @@
+package optriangulo;
+import javax.swing.*;
+public class optriangulo {
+    //atributos triangulo
+    int lad1;
+    int lad2;
+    int lad3;
+    int isoceles;
+    int equilatero;
+    int escaleno;
+    
+    
+    //metodos
+    public void leernumeros(){
+        lad1 = Integer.parseInt(JOptionPane.showInputDialog("digite del lado "));
+        lad2 = Integer.parseInt(JOptionPane.showInputDialog("digite del lado"));
+        lad3 = Integer.parseInt(JOptionPane.showInputDialog("digite del lado"));
+    }
+    public void resultado(){
+     if(lad1==lad3&&lad1==lad2&&lad3==lad2){ 
+     System.out.println("eltriangulo es equilatero");
+    }else if (lad1!=lad2 && lad1!=lad3 && lad2!=lad3){
+            System.out.println("el triangulo es escaleno");
+            }else 
+              System.out.println("el triangulo es isoceles");      
+            
+ 
+}    
+    
+}
