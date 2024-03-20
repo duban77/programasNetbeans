@@ -1,0 +1,36 @@
+package iva;
+import javax.swing.*;
+public class opiva {
+    //atributos para operacion del iva
+    int valor;
+    double iva;  
+    int cantidad;
+    double efectivo;
+    double sindescuento;
+    double debito;
+    double credito;
+    int resultado;
+    //metodos para operacion del iva 
+    public void leervalores(){
+        valor = Integer.parseInt(JOptionPane.showInputDialog("digite el valor del articulo "));
+        iva = Double.parseDouble(JOptionPane.showInputDialog("digite el valor del iva "));
+        cantidad = Integer.parseInt(JOptionPane.showInputDialog("cuantos articulos paga"));
+    }public void total(){
+        sindescuento = ((valor*(iva)+valor)*cantidad);
+    }           
+    public void efectivo(){
+        efectivo = (sindescuento-(sindescuento*0.15));
+    }
+    public void debito(){
+        debito = (sindescuento-(sindescuento*0.10));
+    }
+    public void credito(){
+        credito = (sindescuento-(sindescuento*0.05));
+    }public void resultado(){
+        System.out.println("el total es "+sindescuento);
+        System.out.println("el total con el 15% (efectivo) de descuento es "+efectivo);
+        System.out.println("el total con el 10% (debito) de descuento es "+debito);
+        System.out.println("el total con el 5% (credito) de descuento es "+credito);
+    }
+            
+}
