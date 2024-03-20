@@ -1,0 +1,17 @@
+
+package cuadrado;
+
+public class Maincuadrado {
+    public static void main(String[] args){
+        cuadrado opc= new cuadrado();
+        
+        
+        opc.leernumeros();
+        opc.area();
+        opc.perimetro();
+        opc.resultadocuadrado();
+        
+        
+    }
+   
+}
