@@ -1,0 +1,12 @@
+package notas;
+
+public class mainnotas {
+    public static void main(String[]args){
+        opnotas opn= new opnotas();
+        opn.leernotas();
+        opn.promedio();
+        
+                
+    }
+    
+}
