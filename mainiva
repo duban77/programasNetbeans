@@ -1,0 +1,14 @@
+
+package iva;
+
+public class mainiva {
+    public static void main(String[] args){
+        opiva opi= new opiva();
+        opi.leervalores();
+        opi.total();
+        opi.efectivo();
+        opi.debito();
+        opi.credito();
+        opi.resultado();
+    }
+}
