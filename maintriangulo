@@ -1,0 +1,12 @@
+
+package optriangulo;
+
+public class Maintriangulo {
+     public static void main(String[] args){
+         optriangulo opt=new optriangulo();
+         opt.leernumeros();
+         opt.resultado();
+         
+         
+     }
+}
